@@ -158,3 +158,36 @@ p + p {
   line-height: 1.6;
   padding-bottom: 10rem;
 }
+
+.testimonials {
+  text-align: center;
+}
+.testimonials__card {
+  margin-bottom: 10rem;
+}
+.testimonials__heading {
+  font-size: 2.5rem;
+  color: #a7abae;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 8rem 0;
+}
+.testimonials__img {
+  border-radius: 50%;
+  height: 12rem;
+  width: 12rem;
+  margin-bottom: 3rem;
+}
+.testimonials__content {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+.testimonials__name {
+  font-family: "Fraunces", serif;
+  font-size: 2.2rem;
+  color: #23303e;
+}
+.testimonials__job {
+  color: #a7abae;
+}

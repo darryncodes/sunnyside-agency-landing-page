@@ -1,0 +1,40 @@
+@use '../base/base' as *;
+
+.testimonials {
+  text-align: center;
+
+  &__card {
+    margin-bottom: 10rem;
+  }
+
+  &__heading {
+    font-size: 2.5rem;
+    color: $greyish-blue;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 8rem 0;
+  }
+
+  &__img {
+    border-radius: 50%;
+    height: 12rem;
+    width: 12rem;
+    margin-bottom: 3rem;
+  }
+
+  &__content {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+  }
+
+  &__name {
+    font-family: 'Fraunces', serif;
+    font-size: 2.2rem;
+    color: $very-dark-desaturated-blue;
+  }
+
+  &__job {
+    color: $greyish-blue;
+  }
+}

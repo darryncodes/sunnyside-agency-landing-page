@@ -1,0 +1,30 @@
+@use '../base/base' as *;
+
+.btn {
+  outline: none;
+  border: none;
+  background: none;
+  font-family: 'Fraunces', serif;
+  text-transform: uppercase;
+
+  position: relative;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  width: 112%;
+  bottom: -2px;
+  left: 50%;
+  transform: translate(-50%);
+  height: 6px;
+  border-radius: 3rem;
+}
+
+.btn--brand::after {
+  background: rgba($yellow, 0.3);
+}
+
+.btn--audience::after {
+  background: rgba($soft-red, 0.3);
+}

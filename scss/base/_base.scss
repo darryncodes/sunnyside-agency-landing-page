@@ -3,7 +3,7 @@
 // Primary
 
 $soft-red: hsl(7, 99%, 70%);
-$Yellow: hsl(51, 100%, 49%);
+$yellow: hsl(51, 100%, 49%);
 $dark-desaturated-cyan: hsl(167, 40%, 24%); // graphic design text
 $dark-blue: hsl(198, 62%, 26%); // photography text
 $dark-moderate-cyan: hsl(168, 34%, 41%); // footer
@@ -11,16 +11,16 @@ $dark-moderate-cyan: hsl(168, 34%, 41%); // footer
 // Neutral
 
 $very-dark-desaturated-blue: hsl(212, 27%, 19%);
-$Very-dark-grayish-blue: hsl(213, 9%, 39%);
-$dark-grayish-blue: hsl(232, 10%, 55%);
-$Grayish-blue: hsl(210, 4%, 67%);
-$White: hsl(0, 0%, 100%);
+$very-dark-greyish-blue: hsl(213, 9%, 39%);
+$dark-greyish-blue: hsl(232, 10%, 55%);
+$greyish-blue: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
 
 // Responsive breakpoints
 
 $bp-large-desktop: 68.75em; // 1100px
 $bp-desktop: 56.25em; // 900px
-$bp-tablet: 37.5em; // 600px
+$bp-tablet: 31.25em; // 500px
 
 //Resets & relative font sizing
 
@@ -47,17 +47,33 @@ html {
 
 body {
   font-family: 'Barlow', sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: $very-dark-desaturated-blue;
-
-  padding: 0 2rem;
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: $very-dark-greyish-blue;
+  background-color: $white;
 }
 
 h1,
 h2,
-h3,
-h4,
-h5 {
+h3 {
   font-family: 'Fraunces', serif;
+  color: $very-dark-desaturated-blue;
+}
+
+h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+p + p {
+  margin-top: 1rem;
 }

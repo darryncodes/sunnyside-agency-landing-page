@@ -49,7 +49,8 @@ h2 {
 }
 
 h3 {
-  font-size: 2.2rem;
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
 }
 
 p + p {
@@ -133,4 +134,27 @@ p + p {
     -webkit-transform: translate(-45%);
             transform: translate(-45%);
   }
+}
+
+.service__card {
+  text-align: center;
+  padding-top: 45rem;
+}
+.service__card--graphic, .service__card--photography {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.service__card--graphic {
+  background-image: url(../../img/mobile/image-graphic-design.jpg);
+}
+.service__card--photography {
+  background-image: url(../../img/mobile/image-photography.jpg);
+}
+.service__heading, .service__content {
+  color: #25564b;
+}
+.service__content {
+  line-height: 1.6;
+  padding-bottom: 10rem;
 }

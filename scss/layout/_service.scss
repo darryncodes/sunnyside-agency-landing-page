@@ -1,0 +1,32 @@
+@use '../base/base' as *;
+
+.service {
+  &__card {
+    text-align: center;
+    padding-top: 45rem;
+
+    &--graphic,
+    &--photography {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &--graphic {
+      background-image: url(../../img/mobile/image-graphic-design.jpg);
+    }
+    &--photography {
+      background-image: url(../../img/mobile/image-photography.jpg);
+    }
+  }
+
+  &__heading,
+  &__content {
+    color: $dark-desaturated-cyan;
+  }
+
+  &__content {
+    line-height: 1.6;
+    padding-bottom: 10rem;
+  }
+}

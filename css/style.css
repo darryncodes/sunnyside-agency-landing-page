@@ -86,6 +86,69 @@ p + p {
   background: rgba(254, 120, 103, 0.3);
 }
 
+.footer {
+  background-color: #9adbcd;
+  text-align: center;
+}
+.footer__logo {
+  fill: #2c7566;
+  width: 17rem;
+  height: 3rem;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  margin-top: 8rem;
+}
+.footer__list {
+  list-style: none;
+  margin: 5rem 0;
+}
+.footer__item {
+  display: inline-block;
+  color: #2c7566;
+  font-size: 2.2rem;
+  cursor: pointer;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+.footer__item:hover {
+  color: white;
+}
+.footer__item:not(:first-child) {
+  margin-left: 5rem;
+}
+
+.social__item {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+.social__item:not(:first-child) {
+  margin-left: 3rem;
+}
+.social__icon {
+  fill: #2c7566;
+  width: 3rem;
+  height: 3rem;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+.social__icon:hover {
+  fill: white;
+}
+
+.attribution {
+  padding: 7rem 0 2rem;
+  color: #2c7566;
+  font-size: 1.4rem;
+}
+.attribution__link {
+  color: #2c7566;
+}
+.attribution__link:hover {
+  text-decoration: none;
+}
+
 .hero {
   background-image: url(../../img/mobile/image-header.jpg);
   background-position: center;
@@ -168,6 +231,7 @@ p + p {
 }
 .service__content {
   line-height: 1.6;
+  padding: 0 2rem;
   padding-bottom: 10rem;
 }
 
@@ -194,6 +258,7 @@ p + p {
   font-size: 2rem;
   line-height: 1.6;
   margin-bottom: 3rem;
+  padding: 0 2rem;
 }
 .testimonials__name {
   font-family: "Fraunces", serif;

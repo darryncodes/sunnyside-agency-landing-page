@@ -1,0 +1,72 @@
+@use '../base/base' as *;
+
+.footer {
+  background-color: $light-moderate-cyan;
+  text-align: center;
+
+  &__logo {
+    fill: $dark-moderate-cyan;
+    width: 17rem;
+    height: 3rem;
+    transform: scale(1.5);
+    margin-top: 8rem;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 5rem 0;
+  }
+
+  &__item {
+    display: inline-block;
+    color: $dark-moderate-cyan;
+    font-size: 2.2rem;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+
+    &:hover {
+      color: $white;
+    }
+
+    &:not(:first-child) {
+      margin-left: 5rem;
+    }
+  }
+}
+
+.social {
+  &__item {
+    display: inline-block;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+
+    &:not(:first-child) {
+      margin-left: 3rem;
+    }
+  }
+
+  &__icon {
+    fill: $dark-moderate-cyan;
+    width: 3rem;
+    height: 3rem;
+    transition: ease-in 0.3s;
+
+    &:hover {
+      fill: $white;
+    }
+  }
+}
+
+.attribution {
+  padding: 7rem 0 2rem;
+  color: $dark-moderate-cyan;
+  font-size: 1.4rem;
+
+  &__link {
+    color: #2c7566;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

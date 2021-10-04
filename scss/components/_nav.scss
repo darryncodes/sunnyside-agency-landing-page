@@ -1,1 +1,127 @@
 @use '../base/base' as *;
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+
+  position: relative;
+
+  &__list::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -27px;
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid $white;
+    border-left: 30px solid transparent;
+  }
+
+  &__list {
+    position: relative;
+    display: none;
+    list-style: none;
+    width: 100%;
+    background: $white;
+    text-align: center;
+
+    margin-top: 5rem;
+  }
+
+  &__list.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 190px;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    padding: 5rem 0;
+    width: 89%;
+  }
+
+  &__item {
+    &--contact {
+      font-family: 'Fraunces', serif;
+      text-transform: uppercase;
+      background-color: $yellow;
+      width: 18rem;
+      border-radius: 3rem;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: ease-in 0.3s;
+
+      &:hover {
+        background-color: rgba(#3ebfff, 0.1);
+        // color: $very-dark-desaturated-blue;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    color: $dark-greyish-blue;
+    font-size: 2.5rem;
+    text-decoration: none;
+    margin: 1.5rem 0;
+  }
+
+  &__menu {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  @media only screen and (min-width: 37.5em) {
+    &__list::before {
+      display: none;
+    }
+    &__list {
+      display: flex;
+      width: auto;
+      background: transparent;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0;
+    }
+
+    &__item {
+      &--contact {
+        background-color: $white;
+        width: 14rem;
+        transition: ease-in 0.3s;
+
+        &:hover {
+          background-color: rgba($white, 0.2);
+        }
+      }
+    }
+
+    &__link {
+      color: $white;
+      padding: 1rem 2rem;
+      font-size: inherit;
+      transition: ease-in 0.3s;
+
+      &--contact {
+        color: $very-dark-desaturated-blue;
+        padding: 0;
+      }
+
+      &:hover {
+        color: $very-dark-desaturated-blue;
+      }
+    }
+
+    &__menu {
+      display: none;
+    }
+  }
+}

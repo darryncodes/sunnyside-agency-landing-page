@@ -6,6 +6,7 @@
   background: none;
   font-family: 'Fraunces', serif;
   text-transform: uppercase;
+  cursor: pointer;
 
   position: relative;
 }
@@ -23,8 +24,20 @@
 
 .btn--brand::after {
   background: rgba($yellow, 0.3);
+  z-index: -1;
+}
+
+.btn--brand:hover::after {
+  background: $yellow;
+  transition: ease-in 0.3s;
 }
 
 .btn--audience::after {
   background: rgba($soft-red, 0.3);
+  z-index: -1;
+}
+
+.btn--audience:hover::after {
+  background: $soft-red;
+  transition: ease-in 0.3s;
 }

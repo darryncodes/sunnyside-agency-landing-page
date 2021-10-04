@@ -1,9 +1,8 @@
-// 'use strict';
+'use strict';
 
-// function toggle(social) {
-//   let popup = document.getElementById('social');
-//   if (popup.style.display == 'flex') popup.style.display = 'none';
-//   else popup.style.display = 'flex';
-// }
+const navMenu = document.getElementById('nav__menu');
+const navList = document.getElementById('nav__list');
 
-// onclick="toggle(social);
+navMenu.addEventListener('click', () => {
+  navList.classList.toggle('show');
+});

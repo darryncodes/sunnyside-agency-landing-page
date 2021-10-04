@@ -3,7 +3,7 @@
 .intro {
   &__card {
     text-align: center;
-    padding: 10rem 4rem;
+    padding: 15rem 4rem;
   }
 
   &__img {
@@ -16,5 +16,25 @@
     color: $dark-greyish-blue;
     line-height: 1.6;
     margin-bottom: 2rem;
+  }
+
+  @media only screen and (min-width: 37.5em) {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+
+    &__card {
+      align-self: center;
+      justify-self: center;
+      max-width: 50rem;
+      padding: 5rem 4rem;
+    }
+
+    &__egg {
+      grid-area: 1 / 2;
+    }
+    &__cup {
+      grid-area: 2 / 1;
+    }
   }
 }

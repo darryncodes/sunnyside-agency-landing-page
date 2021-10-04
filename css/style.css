@@ -355,7 +355,7 @@ p + p {
 
 .intro__card {
   text-align: center;
-  padding: 10rem 4rem;
+  padding: 15rem 4rem;
 }
 .intro__img {
   -o-object-fit: cover;
@@ -367,6 +367,26 @@ p + p {
   color: #818498;
   line-height: 1.6;
   margin-bottom: 2rem;
+}
+@media only screen and (min-width: 37.5em) {
+  .intro {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+  }
+  .intro__card {
+    -ms-flex-item-align: center;
+        align-self: center;
+    justify-self: center;
+    max-width: 50rem;
+    padding: 5rem 4rem;
+  }
+  .intro__egg {
+    grid-area: 1/2;
+  }
+  .intro__cup {
+    grid-area: 2/1;
+  }
 }
 
 .service__card {

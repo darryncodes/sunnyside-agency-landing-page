@@ -12,6 +12,8 @@
   @media only screen and (min-width: $bp-tablet) {
     background-image: url(../../img/desktop/image-header.jpg);
     padding: 0 0 50rem 0;
+  }
+  @media only screen and (min-width: $bp-desktop) {
     min-height: 100vh;
   }
 

@@ -6,10 +6,14 @@
 
   &__logo {
     fill: $dark-moderate-cyan;
-    width: 17rem;
+    width: 16rem;
     height: 3rem;
     transform: scale(1.5);
     margin-top: 8rem;
+
+    @media only screen and (min-width: $bp-tablet) {
+      width: 14rem;
+    }
   }
 
   &__list {

@@ -50,7 +50,7 @@ h2 {
 
 h3 {
   font-size: 2.8rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 p + p {
@@ -235,11 +235,16 @@ p + p {
 }
 .footer__logo {
   fill: #2c7566;
-  width: 17rem;
+  width: 16rem;
   height: 3rem;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
   margin-top: 8rem;
+}
+@media only screen and (min-width: 31.25em) {
+  .footer__logo {
+    width: 14rem;
+  }
 }
 .footer__list {
   list-style: none;
@@ -309,7 +314,7 @@ p + p {
     padding: 0 0 50rem 0;
   }
 }
-@media only screen and (min-width: 56.25em) {
+@media only screen and (min-width: 68.75em) {
   .hero {
     min-height: 100vh;
   }
@@ -375,6 +380,7 @@ p + p {
     grid-template-rows: repeat(2, 50%);
   }
   .intro__card {
+    text-align: left;
     -ms-flex-item-align: center;
         align-self: center;
     justify-self: center;
@@ -397,41 +403,50 @@ p + p {
 }
 .service__card {
   text-align: center;
-  padding-top: 45rem;
-}
-.service__card--graphic, .service__card--photography {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.service__card--graphic {
-  background-image: url(../../img/mobile/image-graphic-design.jpg);
-}
-@media only screen and (min-width: 31.25em) {
-  .service__card--graphic {
-    background-image: url(../../img/desktop/image-graphic-design.jpg);
-  }
-}
-.service__card--photography {
-  background-image: url(../../img/mobile/image-photography.jpg);
-}
-@media only screen and (min-width: 31.25em) {
-  .service__card--photography {
-    background-image: url(../../img/desktop/image-photography.jpg);
-  }
+  position: relative;
 }
 .service__heading, .service__content {
   color: #25564b;
 }
+.service__img {
+  width: 100%;
+  height: auto;
+}
+.service__img--1 {
+  display: block;
+}
+@media only screen and (min-width: 43.75em) {
+  .service__img--1 {
+    display: none;
+  }
+}
+.service__img--2 {
+  display: none;
+}
+@media only screen and (min-width: 43.75em) {
+  .service__img--2 {
+    display: block;
+  }
+}
 .service__content {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 100%;
   line-height: 1.6;
   padding: 0 2rem;
-  padding-bottom: 10rem;
 }
 @media only screen and (min-width: 37.5em) {
   .service__content {
+    top: 55%;
     max-width: 50rem;
-    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 56.25em) {
+  .service__content {
+    top: 60%;
   }
 }
 

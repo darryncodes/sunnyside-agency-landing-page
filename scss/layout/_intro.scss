@@ -24,6 +24,7 @@
     grid-template-rows: repeat(2, 50%);
 
     &__card {
+      text-align: left;
       align-self: center;
       justify-self: center;
       max-width: 50rem;

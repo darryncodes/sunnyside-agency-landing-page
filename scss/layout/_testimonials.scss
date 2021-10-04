@@ -3,12 +3,30 @@
 .testimonials {
   text-align: center;
 
+  &__container {
+    @media only screen and (min-width: $bp-tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
   &__card {
+    margin: 0 auto;
     margin-bottom: 10rem;
+    max-width: 40rem;
+
+    @media only screen and (min-width: $bp-tablet) {
+      max-width: 35rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 
   &__heading {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: $greyish-blue;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -23,7 +41,7 @@
   }
 
   &__content {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.6;
     margin-bottom: 3rem;
     padding: 0 2rem;

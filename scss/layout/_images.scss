@@ -11,7 +11,7 @@
     height: 100%;
   }
 
-  @media only screen and (min-width: $bp-tablet) {
+  @media only screen and (min-width: $bp-tablet-2) {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
   }

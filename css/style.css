@@ -346,7 +346,7 @@ p + p {
   width: 100%;
   height: 100%;
 }
-@media only screen and (min-width: 31.25em) {
+@media only screen and (min-width: 37.5em) {
   .images {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
@@ -389,6 +389,12 @@ p + p {
   }
 }
 
+@media only screen and (min-width: 37.5em) {
+  .service {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .service__card {
   text-align: center;
   padding-top: 45rem;
@@ -401,8 +407,18 @@ p + p {
 .service__card--graphic {
   background-image: url(../../img/mobile/image-graphic-design.jpg);
 }
+@media only screen and (min-width: 31.25em) {
+  .service__card--graphic {
+    background-image: url(../../img/desktop/image-graphic-design.jpg);
+  }
+}
 .service__card--photography {
   background-image: url(../../img/mobile/image-photography.jpg);
+}
+@media only screen and (min-width: 31.25em) {
+  .service__card--photography {
+    background-image: url(../../img/desktop/image-photography.jpg);
+  }
 }
 .service__heading, .service__content {
   color: #25564b;
@@ -411,6 +427,12 @@ p + p {
   line-height: 1.6;
   padding: 0 2rem;
   padding-bottom: 10rem;
+}
+@media only screen and (min-width: 37.5em) {
+  .service__content {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
 }
 
 .testimonials {

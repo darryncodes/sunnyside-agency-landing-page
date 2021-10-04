@@ -1,6 +1,11 @@
 @use '../base/base' as *;
 
 .service {
+  @media only screen and (min-width: $bp-tablet-2) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   &__card {
     text-align: center;
     padding-top: 45rem;
@@ -14,9 +19,17 @@
 
     &--graphic {
       background-image: url(../../img/mobile/image-graphic-design.jpg);
+
+      @media only screen and (min-width: $bp-tablet) {
+        background-image: url(../../img/desktop/image-graphic-design.jpg);
+      }
     }
     &--photography {
       background-image: url(../../img/mobile/image-photography.jpg);
+
+      @media only screen and (min-width: $bp-tablet) {
+        background-image: url(../../img/desktop/image-photography.jpg);
+      }
     }
   }
 
@@ -29,5 +42,10 @@
     line-height: 1.6;
     padding: 0 2rem;
     padding-bottom: 10rem;
+
+    @media only screen and (min-width: $bp-tablet-2) {
+      max-width: 50rem;
+      margin: 0 auto;
+    }
   }
 }

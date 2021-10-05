@@ -307,7 +307,7 @@ p + p {
 }
 
 .hero {
-  background-image: url(../../img/mobile/image-header.jpg);
+  background-image: url(../img/mobile/image-header.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -316,7 +316,7 @@ p + p {
 }
 @media only screen and (min-width: 31.25em) {
   .hero {
-    background-image: url(../../img/desktop/image-header.jpg);
+    background-image: url(../img/desktop/image-header.jpg);
     padding: 0 0 50rem 0;
   }
 }

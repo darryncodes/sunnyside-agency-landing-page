@@ -1,7 +1,7 @@
 @use '../base/base' as *;
 
 .hero {
-  background-image: url(../../img/mobile/image-header.jpg);
+  background-image: url(../img/mobile/image-header.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,7 +10,7 @@
   position: relative;
 
   @media only screen and (min-width: $bp-tablet) {
-    background-image: url(../../img/desktop/image-header.jpg);
+    background-image: url(../img/desktop/image-header.jpg);
     padding: 0 0 50rem 0;
   }
   @media only screen and (min-width: $bp-large-desktop) {

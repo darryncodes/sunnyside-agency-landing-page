@@ -24,20 +24,20 @@
         <nav class="nav">
             <img src="img/logo.svg" alt="sunnyside logo" class="nav__logo">
             <button class="nav__menu" id="nav__menu">
-                <img src="img/icon-hamburger.svg" alt="">
+                <img src="img/icon-hamburger.svg" alt="Navigation menu">
             </button>
             <ul class="nav__list" id="nav__list">
                 <li class="nav__item">
-                    <a href="#" id="nav__link" class="nav__link">About</a>
+                    <a href="#" class="nav__link">About</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" id="nav__link" class="nav__link">Services</a>
+                    <a href="#" class="nav__link">Services</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" id="nav__link" class="nav__link">Projects</a>
+                    <a href="#" class="nav__link">Projects</a>
                 </li>
                 <li class="nav__item nav__item--contact">
-                    <a href="#" id="nav__link" class="nav__link nav__link--contact">Contact</a>
+                    <a href="#" class="nav__link nav__link--contact">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -72,8 +72,10 @@
 
         <section class="service">
             <div class="service__card">
-                <img src="img/mobile/image-graphic-design.jpg" alt="" class="service__img service__img--1">
-                <img src="img/desktop/image-graphic-design.jpg" alt="" class="service__img service__img--2">
+                <img src="img/mobile/image-graphic-design.jpg" alt="" class="service__img service__img--1"
+                    aria-hidden="true">
+                <img src="img/desktop/image-graphic-design.jpg" alt="" class="service__img service__img--2"
+                    aria-hidden="true">
                 <div class="service__content">
                     <h3 class="service__heading">Graphic design</h3>
                     <p class="service__content">Great design makes you memorable. We deliver artwork that underscores
@@ -84,8 +86,10 @@
                 </div>
             </div>
             <div class="service__card">
-                <img src="img/mobile/image-photography.jpg" alt="" class="service__img service__img--1">
-                <img src="img/desktop/image-photography.jpg" alt="" class="service__img service__img--2">
+                <img src="img/mobile/image-photography.jpg" alt="" class="service__img service__img--1"
+                    aria-hidden="true">
+                <img src="img/desktop/image-photography.jpg" alt="" class="service__img service__img--2"
+                    aria-hidden="true">
                 <div class="service__content">
                     <h3 class="service__heading">Photography</h3>
                     <p class="service__content">Increase your credibility by getting the most stunning, high-quality
@@ -147,25 +151,28 @@
 
         </section>
 
-        <section class="images">
+        <div class="images">
             <div class="images__card">
-                <img src="img/mobile/image-gallery-milkbottles.jpg" alt="" class="images__img" loading="lazy">
+                <img src="img/mobile/image-gallery-milkbottles.jpg" alt="" class="images__img" loading="lazy"
+                    aria-hidden="true">
             </div>
             <div class="images__card">
-                <img src="img/mobile/image-gallery-orange.jpg" alt="" class="images__img" loading="lazy">
+                <img src="img/mobile/image-gallery-orange.jpg" alt="" class="images__img" loading="lazy"
+                    aria-hidden="true">
             </div>
             <div class="images__card">
-                <img src="img/mobile/image-gallery-cone.jpg" alt="" class="images__img" loading="lazy">
+                <img src="img/mobile/image-gallery-cone.jpg" alt="" class="images__img" loading="lazy"
+                    aria-hidden="true">
             </div>
             <div class="images__card">
-                <img src="img/mobile/image-gallery-sugar-cubes.jpg" alt="" class="images__img" loading="lazy">
+                <img src="img/mobile/image-gallery-sugar-cubes.jpg" alt="" class="images__img" loading="lazy"
+                    aria-hidden="true">
             </div>
-        </section>
+        </div>
 
     </main>
 
     <footer class="footer">
-        <!-- <img src="img/footer-logo.svg" alt="sunnyside logo" class="footer__logo"> -->
         <svg class="footer__logo">
             <use xlink:href="#logo"></use>
         </svg>

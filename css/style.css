@@ -152,6 +152,9 @@ p + p {
   padding: 5rem 0;
   width: 89%;
 }
+.nav__list.hide {
+  display: none;
+}
 .nav__item--contact {
   font-family: "Fraunces", serif;
   text-transform: uppercase;
@@ -171,6 +174,9 @@ p + p {
   color: #818498;
   font-size: 2.5rem;
   text-decoration: none;
+  margin: 2rem 0;
+}
+.nav__link--contact {
   margin: 1.5rem 0;
 }
 .nav__menu {
@@ -497,8 +503,8 @@ p + p {
 }
 .testimonials__img {
   border-radius: 50%;
-  height: 12rem;
-  width: 12rem;
+  height: 9rem;
+  width: 9rem;
   margin-bottom: 3rem;
 }
 .testimonials__content {
@@ -509,7 +515,7 @@ p + p {
 }
 .testimonials__name {
   font-family: "Fraunces", serif;
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   color: #23303e;
 }
 .testimonials__job {

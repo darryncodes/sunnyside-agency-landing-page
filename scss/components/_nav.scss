@@ -45,6 +45,10 @@
     width: 89%;
   }
 
+  &__list.hide {
+    display: none;
+  }
+
   &__item {
     &--contact {
       font-family: 'Fraunces', serif;
@@ -58,7 +62,6 @@
 
       &:hover {
         background-color: rgba(#3ebfff, 0.1);
-        // color: $very-dark-desaturated-blue;
       }
     }
   }
@@ -68,7 +71,11 @@
     color: $dark-greyish-blue;
     font-size: 2.5rem;
     text-decoration: none;
-    margin: 1.5rem 0;
+    margin: 2rem 0;
+
+    &--contact {
+      margin: 1.5rem 0;
+    }
   }
 
   &__menu {

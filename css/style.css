@@ -153,9 +153,6 @@ p + p {
   padding: 5rem 0;
   width: 89%;
 }
-.nav__list.hide {
-  display: none;
-}
 .nav__item--contact {
   font-family: "Fraunces", serif;
   text-transform: uppercase;

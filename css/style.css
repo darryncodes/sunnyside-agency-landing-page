@@ -64,6 +64,7 @@ p + p {
   font-family: "Fraunces", serif;
   text-transform: uppercase;
   cursor: pointer;
+  color: #23303e;
   position: relative;
 }
 

@@ -30,7 +30,6 @@ Users should be able to:
 
 - [GitHub repo](https://github.com/darryncodes/sunnyside-agency-landing-page)
 - [Solution URL](https://darryncodes.github.io/sunnyside-agency-landing-page/)
-- [Live Site URL](https://www.darryncodes.co.uk/pages/sunnyside-agency-landing-page.html)
 
 ## My process
 
